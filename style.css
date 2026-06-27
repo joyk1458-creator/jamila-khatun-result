@@ -84,3 +84,69 @@ footer{
 footer p{
     margin:6px 0;
 }
+/* Responsive */
+
+@media (max-width:768px){
+
+header h1{
+font-size:24px;
+}
+
+header p{
+font-size:15px;
+}
+
+.container{
+width:95%;
+padding:20px;
+}
+
+button{
+font-size:16px;
+}
+
+}
+
+/* Animation */
+
+.container{
+animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Focus Effect */
+
+input:focus,
+select:focus{
+outline:none;
+border:2px solid #0b4ea2;
+}
+
+/* Button Effect */
+
+button{
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.02);
+}
+
+/* Smooth */
+
+html{
+scroll-behavior:smooth;
+}
